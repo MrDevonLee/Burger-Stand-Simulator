@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="373.0" prefWidth="605.0" stylesheets="/BurgerSimulator/GUIStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BurgerSimulator.GUISimulation">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints maxHeight="500.0" minHeight="10.0" prefHeight="38.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="396.0" minHeight="10.0" prefHeight="101.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="310.0" minHeight="10.0" prefHeight="43.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="189.0" minHeight="10.0" prefHeight="135.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+
+   <children>
+      <GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="122.0" prefWidth="608.0" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+        <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="500.0" minWidth="50.0" prefWidth="300.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="500.0" minWidth="50.0" prefWidth="300.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="237.0" minHeight="0.0" prefHeight="86.0" vgrow="SOMETIMES" />
+          <RowConstraints fillHeight="false" maxHeight="268.0" minHeight="10.0" prefHeight="81.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+
+            <Button mnemonicParsing="false" onAction="#leave" prefHeight="25.0" prefWidth="175.0" text="Customer Leaves" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="arrival" mnemonicParsing="false" onAction="#arrive" prefHeight="25.0" prefWidth="175.0" text="Customer Arrives" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="arrival1" mnemonicParsing="false" onAction="#incrementClock" prefHeight="25.0" prefWidth="175.0" text="Increment Clock" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#printStatistics" prefHeight="25.0" prefWidth="175.0" text="Print Statistics" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Separator prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+            <Separator prefWidth="200.0" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+
+         </children>
+      </GridPane>
+
+      <GridPane layoutX="40.0" prefHeight="18.0" prefWidth="597.0" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="172.0" minWidth="10.0" prefWidth="75.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="353.0" minWidth="10.0" prefWidth="200.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="237.0" minWidth="10.0" prefWidth="200.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+
+            <Label fx:id="clockDisplay" text="Clock: 0" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label fx:id="custDisplay" layoutX="20.0" prefHeight="25.0" text="Serving Customer: N/A" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label fx:id="lineDisplay" text="Customers in Line: 0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+
+         </children>
+      </GridPane>
+
+      <Label prefHeight="26.0" prefWidth="451.0" text="Platteville Burger Capacity Simulation" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
+         <GridPane.margin>
+            <Insets left="65.0" />
+         </GridPane.margin>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="outputBox" editable="false" prefHeight="135.0" prefWidth="598.0" wrapText="true" GridPane.rowIndex="3">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextArea>
+      <Button fx:id="quitButton" mnemonicParsing="false" onAction="#endSimulation" text="End Simulation" textAlignment="CENTER" GridPane.halignment="RIGHT">
+         <GridPane.margin>
+            <Insets right="58.0" />
+         </GridPane.margin>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Separator prefWidth="200.0" GridPane.valignment="BOTTOM" />
+
+   </children>
+</GridPane>

@@ -1,0 +1,69 @@
+
+The average wait time for the customers who finished waiting: 0.0.
+The total wait time is 0.
+The number of customers finished: 0.
+The number of customers who did not have to wait: 0.
+
+Time updated by 3 units; current time is 3.
+Nobody is being served @time 3.
+A customer has arrived @time 3. Number of customers waiting in the line: 0
+Time updated by 6 units; current time is 9.
+A customer has arrived @time 9. Number of customers waiting in the line: 1
+Time updated by 1 unit; current time is 10.
+A customer has arrived @time 10. Number of customers waiting in the line: 2
+Customer#1 arrived @time 3 and finished @time 10. Number of customers waiting: 1.
+
+The average wait time for the customers who finished waiting: 1.0.
+The total wait time is 1.
+The number of customers finished: 1.
+The number of customers who did not have to wait: 1.
+
+Time NOT updated with -10.
+Customer#2 arrived @time 9 and finished @time 10. Number of customers waiting: 0.
+A customer has arrived @time 10. Number of customers waiting in the line: 1
+Time updated by 2 units; current time is 12.
+A customer has arrived @time 12. Number of customers waiting in the line: 2
+Blah is NOT a valid command!
+A customer has arrived @time 12. Number of customers waiting in the line: 3
+Time updated by 1 unit; current time is 13.
+A customer has arrived @time 13. Number of customers waiting in the line: 4
+
+The average wait time for the customers who finished waiting: 0.5.
+The total wait time is 1.
+The number of customers finished: 2.
+The number of customers who did not have to wait: 1.
+
+Time updated by 3 units; current time is 16.
+A customer has arrived @time 16. Number of customers waiting in the line: 5
+Time updated by 5 units; current time is 21.
+A customer couldn't get in the line @time 21 because the line was full.
+Customer#3 arrived @time 10 and finished @time 21. Number of customers waiting: 4.
+
+The average wait time for the customers who finished waiting: 4.0.
+The total wait time is 12.
+The number of customers finished: 3.
+The number of customers who did not have to wait: 1.
+
+Time updated by 3 units; current time is 24.
+Customer#4 arrived @time 10 and finished @time 24. Number of customers waiting: 3.
+Customer#5 arrived @time 12 and finished @time 24. Number of customers waiting: 2.
+Time updated by 1 unit; current time is 25.
+Customer#6 arrived @time 12 and finished @time 25. Number of customers waiting: 1.
+Customer#7 arrived @time 13 and finished @time 25. Number of customers waiting: 0.
+Time updated by 3 units; current time is 28.
+Customer#8 arrived @time 16 and finished @time 28. Number of customers waiting: 0.
+Time updated by 2 units; current time is 30.
+Nobody is being served @time 30.
+
+The average wait time for the customers who finished waiting: 8.142857142857142.
+The total wait time is 57.
+The number of customers finished: 8.
+The number of customers who did not have to wait: 1.
+
+Simulation statistics:
+The average wait time for the customers who finished waiting: 8.142857142857142.
+The total wait time is 57.
+The number of customers finished: 8.
+The number of customers who did not have to wait: 1.
+
+Simulation terminated.

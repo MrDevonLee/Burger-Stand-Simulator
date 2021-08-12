@@ -1,0 +1,25 @@
+/*
+This file holds some aesthetic settings for the GUI including background
+color and font formatting.
+*/
+.root
+{
+   -fx-background-color: bisque;
+}
+
+.label
+{
+   -fx-font-size: 20;
+   -fx-font-family: "Times New Roman";
+}
+
+.button
+{
+   -fx-font-size: 16;
+   -fx-font-family: "Times New Roman";
+}
+
+.textarea
+{
+
+}
