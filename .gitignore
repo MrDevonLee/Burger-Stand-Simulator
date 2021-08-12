@@ -1,0 +1,5 @@
+# Ignore these files
+/out
+.idea
+Assignment4.iml
+JavaFXApplication
